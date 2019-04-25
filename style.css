@@ -1,0 +1,187 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	color: gray;
+	background: #232B2B;
+	min-height: 100%;
+}
+header{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	height: 60px;
+}
+h1{
+	color:#E3AE57;
+}
+ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	margin-top:10px;
+}
+h4{
+	margin-top:4px;
+}
+input[type="checkbox"], input[type="radio"] {
+	display: none;
+}
+label{
+	cursor: pointer;
+}
+.myinfo{
+	display: none;
+}
+.radio:checked +label{
+	display: none;
+}
+.radio:checked~.myinfo{
+	display: block;
+}
+.novis:checked + .Me{
+	display: none;
+}
+h2{
+	margin:10px;
+}
+ul h2{
+	animation: bouncing 3s cubic-bezier(.1,.25,.1,1) 0.5s infinite alternate both;
+	letter-spacing: 0.2em;
+	margin-top:10px;
+}
+@keyframes bouncing{
+    0%  { font-size: 0px;}
+    100%{ font-size: 26px;;
+    }
+  }
+li{
+	border:2px solid #DC3D24;
+	color:#E3AE57;
+	list-style: none;
+	width: 150px;
+	border-radius: 7px;
+	margin: 8px 20px 0;
+	padding: 5px;
+}
+li:hover{
+	transform: translateY(1px);
+	cursor: pointer;
+}
+section{
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+}
+.tv{
+	width: 400px;
+	height: 240px;
+	box-shadow: 0 0 0 3px #E3AE57, 0 0 0 30px black;
+	border-radius: 10px;
+	position: relative;
+	margin: 40px;
+}
+.show{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	position: relative;
+}
+.mySlides{
+	z-index: 1;
+	height: 100%;
+}
+.offTV{
+	z-index: 2;
+	width: 200%;
+	position: absolute;
+	left:-50%;
+	top:-40px;
+}
+.on_off{
+	position: absolute;
+	bottom: -24px;
+	right: 5px;
+	background: #E40045;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.Me{
+	display: none;
+	width: 45%;
+	margin: 30px auto 0;
+}
+table{
+	width: 98%;
+	margin-left:2%;
+}
+.novis + label{
+	border:2px solid #DC3D24;
+	color:#E3AE57;
+	width: 150px;
+	text-align: center;
+	border-radius: 7px;
+	display: block;
+	margin: 10px 0 0 auto;
+	padding: 5px;
+}
+.messenger{
+	display: flex;
+	justify-content: center;
+}
+.messenger img{
+	width: 100px;
+	height: 100px;
+	margin:0 30px;
+}
+.communication{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+.telephone{
+	height: 22px;
+	display: inline-block;
+}
+.telephone + h3{
+	display: inline-block;
+}
+footer h4{
+	float:right;
+	margin: 20px;
+}
+@media screen and (max-width: 1024px){
+	section{
+		display: flex;
+		flex-direction: column;
+	}
+	.tv{
+		order:0;
+		margin-top:80px;
+	}
+	.Me{
+		order:1;
+		width: 80%;
+	}
+}
+@media screen and (max-width: 685px){
+	li{
+		width: 100px;
+	}
+	.tv{
+		width: 280px;
+		height: 168px;
+	}
+}

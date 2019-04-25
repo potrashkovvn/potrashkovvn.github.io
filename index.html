@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<title>Потрашков В.Н.</title>
+</head>
+<body>
+	<header>
+		<h1>
+			Добро пожаловать!
+		</h1>
+		<nav>
+			<ul>
+				<input type="radio" class="radio" name="lockb" id="nav_bar"><label for="nav_bar"><h2>Кратко обо мне</h2></label>
+				<label class="myinfo"><li onclick="ShowMe()"><input type="radio" name="navig">Кто я?</li></label>
+				<label class="myinfo"><li onclick="ShowMe()"><input type="radio" name="navig">Что я?</li></label>
+				<label class="myinfo"><li onclick="ShowMe()"><input type="radio" name="navig">Связь со мной</li></label>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div class="tv">
+			<div class="show">
+				<img src="img/i-img.jpg" alt="" class="offTV">
+				<img src="img/derevo.jpg" alt="" class="mySlides">
+				<img src="img/home.jpg" alt="" class="mySlides">
+				<img src="img/fruts.jpg" alt="" class="mySlides">
+			</div>
+			<div class="on_off" onclick="showTV()">
+			</div>
+		</div>
+		<div class="Me">
+			<h2>Потрашков Владислав Николаевич.</h2>
+			<p>
+				<h4>Я родился в городе Минске 6 декабря 1995г. Среднее образование получал в СШ №134 г.Минска, когда настоло время решать 9 или 11 классов заканчивать, я понимал, что после колледжа быстрее смогу стать самостоятельным и раньше приносить доход, поэтому окончил школу в 9 классе и 
+поступил в автомеханический колледж г.Минска. После колледжа у меня была отработка на МАЗ-е. А затем осенний призыв и я уже в камуфляжной форме служу в войсках ПВО. В армии я получил должность командира отделения связи и звание сержанта. После армии временно устроился работать на стройке, затем монтажником рекламных конструкций. Параллельно начал изучать создание сайтов. Окончил курсы. Сейчас я умею пользоваться HTML5, CSS3(Sass, Less в процессе), работаю над JS(попутно jQuery), дружу с GitHub, в ближайшие сроки планирую подключать Bootstrap. Моя цель быть профессионалом своего дела и добиться успеха в этой сфере. Я считаю, что мой жизненный путь сформировал необходимые качества, которые позволят достичь результата: ответственность, стрессоустойчивость, инициативность, аналитический склад ума, навыки организации рабочего процесса, отзывчивость, оптимизм, желание развиваться.</h4>
+				<input type="radio" class="novis" name="lockb" id="bvis" onclick="ShowMe()"><label for="bvis">Скрыть</label>
+			</p>
+		</div>
+		<div class="Me">
+			<table>
+				<h3>Резюме</h3>
+				<tr>
+					<td width="32%">Фамилия</td>
+					<td width="68%">Потрашков</td>
+				</tr>
+				<tr>
+					<td>Имя</td>
+					<td>Владислав</td>
+				</tr>
+				<tr>
+					<td>Отчество</td>
+					<td>Николаевич</td>
+				</tr>
+				<tr>
+					<td>Возраст</td>
+					<td>23 года</td>
+				</tr>
+				<table>
+					<h3>Образование</h3>
+					<tr>
+						<td width="32%">Образование</td>
+						<td width="68%">Среднее специальное</td>
+					</tr>
+					<tr>
+						<td>Название учебного заведения</td>
+						<td>МГАК имени академика М.С. Высоцкого</td>
+					</tr>
+					<tr>
+						<td>Специальность</td>
+						<td>Гидропневмосистемы мобильных и технологических машин</td>
+					</tr>
+					<tr>
+						<td>Год окончания</td>
+						<td>2015</td>
+					</tr>
+				</table>
+				<table>
+					<h3>Доп образование</h3>
+					<tr>
+						<td width="32%">Курс</td>
+						<td width="68%">"Frontend-разработка"</td>
+					</tr>
+					<tr>
+						<td>Название учебного заведения</td>
+						<td>ЧП "Область развития"</td>
+					</tr>
+				</table>
+				<table>
+					<h3>Служба в армии</h3>
+					<tr>
+						<td width="32%">Род войск</td>
+						<td width="68%">ПВО</td>
+					</tr>
+					<tr>
+						<td>Должность</td>
+						<td>Командир отделения связи</td>
+					</tr>
+					<tr>
+						<td>Звание</td>
+						<td>Сержант</td>
+					</tr>
+					<tr>
+						<td>Период службы</td>
+						<td>С 2015 по 2017</td>
+					</tr>
+				</table>
+				<table>
+					<h3>Места работы</h3>
+					<tr>
+						<td width="32%">МАЗ</td>
+						<td width="68%">с июля по ноябрь 2015г.</td>
+					</tr>
+					<tr>
+						<td>"ТауэрМедиа"</td>
+						<td>С октября 2017г. по апрель 2019г.</td>
+					</tr>
+				</table>
+			</table>
+			<input type="radio" class="novis" name="lockb" id="bvis" onclick="ShowMe()"><label for="bvis">Скрыть</label>
+		</div>
+		<div class="Me">
+			<div class="messenger">
+				<a href=""><img src="img/messenger/instagramm.svg"></a>
+				<a href=""><img src="img/messenger/vk.svg"></a>
+			</div>
+			<div class="communication">
+				<img src="img/messenger/velcome.png" class="telephone"><h3>+375291538290</h3>
+			</div>
+			<input type="radio" class="novis" name="lockb" id="bvis" onclick="ShowMe()"><label for="bvis">Скрыть</label>
+		</div>
+	</section>
+	<footer>
+		<h4>
+			Ознакомительная страница.
+		</h4>
+	</footer>
+
+	<script src="js.js"></script>
+</body>
+</html>
